@@ -5,21 +5,21 @@
 class GoSeccure < Formula
   desc "Pure-Go port of SECCURE — byte-compatible with the C reference and py-seccure across all 15 curves."
   homepage "https://github.com/invenity-labs/go-seccure"
-  version "0.2.0"
+  version "0.2.1"
   license "LGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.0/go-seccure_0.2.0_darwin_amd64.tar.gz"
-      sha256 "8f819ed835834b226e08159e327bd18eed1a379b0244a58a2e41929601df5ee5"
+      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.1/go-seccure_0.2.1_darwin_amd64.tar.gz"
+      sha256 "33e51cf3b9a430e6ca822f9d2932d06091052469fd9914331c7f728687016ae5"
 
       define_method(:install) do
         bin.install Dir["seccure-*"]
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.0/go-seccure_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2b97b2c2be4f5a8dcd293d4ae18e506e13d3d80e7ae532a643a493771f40d9a3"
+      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.1/go-seccure_0.2.1_darwin_arm64.tar.gz"
+      sha256 "73980ae43d9f6762e9d3e7170d4bdf70109dd2c048bb1561760e91f1c9cbf9ae"
 
       define_method(:install) do
         bin.install Dir["seccure-*"]
@@ -29,15 +29,15 @@ class GoSeccure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.0/go-seccure_0.2.0_linux_amd64.tar.gz"
-      sha256 "7941a31b1f558afc6d7c6b2e31b313b089926d3c5c7428f56ee18256fa8bbb50"
+      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.1/go-seccure_0.2.1_linux_amd64.tar.gz"
+      sha256 "cdaa9817247a6c2eb3fb3155f0ad4398f93f7c2c345354d891b24735ee4eab31"
       define_method(:install) do
         bin.install Dir["seccure-*"]
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.0/go-seccure_0.2.0_linux_arm64.tar.gz"
-      sha256 "50b6eefe26e40f8c353b7643a93f323eb1a5fe7804f603da912a4486af6178c0"
+      url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.1/go-seccure_0.2.1_linux_arm64.tar.gz"
+      sha256 "bf3ceec2a3732967392fb7eb3b6b0bf9837c9d2cac3be42bdbfec28fd9af8e28"
       define_method(:install) do
         bin.install Dir["seccure-*"]
       end
