@@ -11,7 +11,7 @@ class GoSeccure < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.0/go-seccure_0.2.0_darwin_amd64.tar.gz"
-      sha256 "fb0fcfb1fb6a414964136203c86673032bf8ba5f1bba376492cba1dddd7df23b"
+      sha256 "8f819ed835834b226e08159e327bd18eed1a379b0244a58a2e41929601df5ee5"
 
       define_method(:install) do
         bin.install Dir["seccure-*"]
@@ -19,7 +19,7 @@ class GoSeccure < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/invenity-labs/go-seccure/releases/download/v0.2.0/go-seccure_0.2.0_darwin_arm64.tar.gz"
-      sha256 "df39eaac9014318c218ddf10d76a34f518ce057bb9cacf289e533b7a99790e4f"
+      sha256 "2b97b2c2be4f5a8dcd293d4ae18e506e13d3d80e7ae532a643a493771f40d9a3"
 
       define_method(:install) do
         bin.install Dir["seccure-*"]
